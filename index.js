@@ -1,9 +1,9 @@
 const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-const currentDay = new Date();
-const dayOfWeek = currentDay.getDay();
-const dayName = dayNames[dayOfWeek];
-const currentTime = new Date();
-const utcTime = currentTime.getTime();
+let currentDay = new Date();
+let dayOfWeek = currentDay.getDay();
+let dayName = dayNames[dayOfWeek];
+let currentTime = new Date();
+let utcTime = currentTime.getTime();
 
 document.getElementById("day").textContent = `Today is ${dayName}`;
 document.getElementById("time").textContent = `UTC time in milliseconds ${utcTime}`;
